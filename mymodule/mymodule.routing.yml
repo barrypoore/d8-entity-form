@@ -1,0 +1,7 @@
+mymodule.my_form:
+  path: '/suppliers'
+  defaults:
+    _title: 'Suppliers Form'
+    _form: '\Drupal\mymodule\Form\MyForm'
+  requirements:
+    _permission: 'access content'

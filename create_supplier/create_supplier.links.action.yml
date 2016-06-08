@@ -1,0 +1,11 @@
+entity.marquee.add_form:
+  route_name: 'marquee.add_page'
+  title: 'Add Marquee'
+  appears_on:
+    - entity.marquee.collection
+entity.marquee_type.add_form:
+  route_name: 'entity.marquee_type.add_form'
+  title: 'Add Marquee type'
+  appears_on:
+    - entity.marquee_type.collection
+

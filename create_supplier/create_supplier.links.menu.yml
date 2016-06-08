@@ -1,0 +1,16 @@
+# Marquee menu items definition
+entity.marquee.collection:
+  title: 'Marquee list'
+  route_name: entity.marquee.collection
+  description: 'List Marquee entities'
+  parent: system.admin_structure
+  weight: 100
+
+# Marquee type menu items definition
+entity.marquee_type.collection:
+  title: 'Marquee type'
+  route_name: entity.marquee_type.collection
+  description: 'List Marquee type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

@@ -1,0 +1,7 @@
+supplier.create:
+  path: '/create-supplier'
+  defaults:
+    _title: 'Create Supplier'
+    _form: '\Drupal\create_supplier\Form\CreateSupplier'
+  requirements:
+    _permission: 'access content'

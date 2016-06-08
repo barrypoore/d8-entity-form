@@ -1,0 +1,64 @@
+<?php
+
+/**
+ * @file
+ * Contains create_supplier.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function create_supplier_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the create_supplier module.
+    case 'help.page.create_supplier':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function create_supplier_theme() {
+  $theme = [];
+  $theme['marquee'] = [
+    'render element' => 'elements',
+    'file' => 'marquee.page.inc',
+    'template' => 'marquee',
+  ];
+  $theme['marquee_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'marquee.page.inc',
+  ];
+  // Added from console message
+  $theme['marquee'] = array(
+    'render element' => 'elements',
+    'file' => 'marquee.page.inc',
+    'template' => 'marquee',
+  );
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function create_supplier_theme_suggestions_marquee(array $variables) {
+  $suggestions = array();
+  $entity = $variables['elements']['#marquee'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'marquee__' . $sanitized_view_mode;
+  $suggestions[] = 'marquee__' . $entity->bundle();
+  $suggestions[] = 'marquee__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'marquee__' . $entity->id();
+  $suggestions[] = 'marquee__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

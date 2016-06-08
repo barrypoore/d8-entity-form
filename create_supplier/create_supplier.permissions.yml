@@ -1,0 +1,19 @@
+add marquee entities:
+  title: 'Create new Marquee entities'
+
+administer marquee entities:
+  title: 'Administer Marquee entities'
+  description: 'Allow to access the administration form to configure Marquee entities.'
+  restrict access: true
+
+delete marquee entities:
+  title: 'Delete Marquee entities'
+
+edit marquee entities:
+  title: 'Edit Marquee entities'
+
+view published marquee entities:
+  title: 'View published Marquee entities'
+
+view unpublished marquee entities:
+  title: 'View unpublished Marquee entities'

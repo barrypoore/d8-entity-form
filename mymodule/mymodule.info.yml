@@ -1,0 +1,4 @@
+name: Suppliers Form
+type: module
+description: Sample module that defines a route and form callback.
+core: 8.x

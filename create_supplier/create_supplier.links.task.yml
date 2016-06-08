@@ -1,0 +1,17 @@
+# Marquee routing definition
+entity.marquee.canonical:
+  route_name: entity.marquee.canonical
+  base_route: entity.marquee.canonical
+  title: 'View'
+
+entity.marquee.edit_form:
+  route_name: entity.marquee.edit_form
+  base_route: entity.marquee.canonical
+  title: Edit
+
+entity.marquee.delete_form:
+  route_name:  entity.marquee.delete_form
+  base_route:  entity.marquee.canonical
+  title: Delete
+  weight: 10
+
