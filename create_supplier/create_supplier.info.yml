@@ -1,6 +1,6 @@
 name: Create Supplier
 type: module
-description: A module to provide the first step form to accept incoming post data.
+description: A module to enable suppliers to add their quote prices for marquees.
 core: 8.x
 
 package: Marquee Suppliers Modules

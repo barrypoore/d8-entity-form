@@ -1,0 +1,6 @@
+uuid: 8b20b245-f43c-4f8a-85c4-72a3eef6ead5
+langcode: en
+status: true
+dependencies: {  }
+id: framed
+label: 'Framed Marquee'

@@ -1,7 +1,7 @@
-supplier.create:
-  path: '/create-supplier'
+supplier.add_marquees:
+  path: '/add-marquees'
   defaults:
-    _title: 'Create Supplier'
-    _form: '\Drupal\create_supplier\Form\CreateSupplier'
+    _title: 'Suppliers Marquee Form'
+    _form: '\Drupal\create_supplier\Form\SupplierAddMarquees'
   requirements:
     _permission: 'access content'
